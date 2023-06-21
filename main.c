@@ -3,11 +3,16 @@
 
 int main()
 {
-    printf("Dsoldier - armed with a plasma rifle \n");
-    printf("Height: 1.8 meters\n");
-    printf("Shoulder width: 80cm \n");
-    printf("Armor thickness: 4mm \n");
-    printf("Max. speed: 75km/h \n");
-    printf("Crace. speed: 60km/h\n");
+    printf( "1\n");
+    printf( "4\n");
+    printf( "9\n");
+    printf( "16\n");
+    printf( "25\n");
+    printf( "36\n");
+    printf( "49\n");
+    printf( "64\n");
+    printf( "81\n");
+    printf( "100\n");
+
     return 0;
 }
