@@ -9,6 +9,7 @@ int main()
 
     }
     for (int a=10;  a <20; a++) {
+        printf( "%d\n", a*a);
         printf( "%d\n", a*a*a);
 
     }
