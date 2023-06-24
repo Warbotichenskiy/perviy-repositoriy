@@ -1,26 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-#include <stdio.h>
-int main() {
+#define FIB_NUM 50
+int main(int argc, char* argv[])
+{
+    char str[] = "Omnia Gallia";
 
-  int i, n;
+    char buf[20];
 
-  int t1 = 0, t2 = 1;
+    strcpy(buf, str);
 
-  int nextTerm = t1 + t2;
+    printf("%s\n", buf);
 
-  printf("Enter the number of terms: ");
-  scanf("%d", &n);
+    for(int i = 0; i < 20; i++) {
+        printf("Character #%d is %c with code %d\n", i, buf[i], buf[i]);
+    }
 
-  printf("Fibonacci Series: %d, %d, ", t1, t2);
+    /*
+    int a[FIB_NUM];
 
-  for (i = 3; i <= n; ++i) {
-    printf("%d, ", nextTerm);
-    t1 = t2;
-    t2 = nextTerm;
-    nextTerm = t1 + t2;
-  }
+    for(int i=0; i<FIB_NUM; i++){
+        a[i] = i > 1 ? a[i-2] + a[i-1] : i;
+    }
 
-  return 0;
+    for(int i=0; i<FIB_NUM; i++){
+        printf("Fibonacci num #%d = %d\n", i, a[i]);
+    }
+    */
+
+    return 0;
 }
+
